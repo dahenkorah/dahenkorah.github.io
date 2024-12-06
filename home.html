@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
 
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 0.5em 0;
+            font-style: italic;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* About Section */
+        #about {
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 400px;
+            height: 300px;
+            
+            margin-bottom: 1em;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: #f4f4f4;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+        }
+
+        .skill {
+            background: white;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill h3 {
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Your Tagline (e.g., Aspiring Web Developer)</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <img src="IMG/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h2>About Me</h2>
+                <p>Hi, I’m Deborah Ahenkorah, a [Your Profession or Field of Study]. I’m passionate about [a short sentence about your interests or goals]. Welcome to my CV website!</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Featured Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <p>Building the structure of web pages.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <p>Styling websites to look amazing.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <p>Adding interactivity to web pages.</p>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Social Media: <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
+        </div>
+    </footer>
+</body>
+</html>
