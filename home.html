@@ -3,158 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Header */
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 1.5em 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            margin: 0.5em 0;
-            font-style: italic;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 1em;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* About Section */
-        #about {
-            padding: 2em 0;
-            text-align: center;
-        }
-
-        .profile-pic {
-            width: 400px;
-            height: 300px;
-            
-            margin-bottom: 1em;
-        }
-
-        /* Skills Section */
-        #skills {
-            background: #f4f4f4;
-            padding: 2em 0;
-            text-align: center;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1em;
-            margin-top: 1em;
-        }
-
-        .skill {
-            background: white;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .skill h3 {
-            margin-top: 0;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1.5em 0;
-        }
-
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
+    <title>Deborah Ahenkorah | Innovating with Purpose</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="Assets/CSS/styles.css" rel="stylesheet"> 
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Your Tagline (e.g., Aspiring Web Developer)</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="about">
-            <div class="container">
-                <img src="IMG/profile.jpg" alt="Profile Picture" class="profile-pic">
-                <h2>About Me</h2>
-                <p>Hi, I’m Deborah Ahenkorah, a [Your Profession or Field of Study]. I’m passionate about [a short sentence about your interests or goals]. Welcome to my CV website!</p>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold text-gray-900"><a href="#home">DA</a></div>
+            <div class="space-x-6">
+                <a href="#about" class="nav-link text-gray-700 font-medium">About</a>
+                <a href="#work" class="nav-link text-gray-700 font-medium">Work</a>
+                <a href="#press" class="nav-link text-gray-700 font-medium">Press</a>
+                <a href="#contact" class="nav-link text-gray-700 font-medium">Contact</a>
             </div>
-        </section>
-        <section id="skills">
-            <div class="container">
-                <h2>Featured Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">
-                        <h3>HTML</h3>
-                        <p>Building the structure of web pages.</p>
-                    </div>
-                    <div class="skill">
-                        <h3>CSS</h3>
-                        <p>Styling websites to look amazing.</p>
-                    </div>
-                    <div class="skill">
-                        <h3>JavaScript</h3>
-                        <p>Adding interactivity to web pages.</p>
-                    </div>
-                    <!-- Add more skills as needed -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home" class="hero-gradient min-h-screen pt-24 flex items-center justify-center">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between">
+                <div class="md:w-2/3 md:pr-12 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Innovating with Purpose
+                    </h1>
+                    <p class="text-xl text-gray-700 max-w-2xl mb-10">
+                        My name is Deborah Ahenkorah and I'm a creative problem solver passionate about designing impactful digital solutions that transform ideas into reality. With a blend of strategy, design, and technology, I help businesses and individuals bring their visions to life.
+                    </p>
+                    <a href="#work" class="cta-button inline-block text-white px-8 py-4 rounded-full text-lg font-semibold">
+                        Explore My Work
+                    </a>
+                </div>
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center md:justify-end">
+                    <img 
+                        src="IMG/profile.jpg" 
+                        alt="Deborah Ahenkorah" 
+                        class="profile-photo w-64 h-64 md:w-80 md:h-80 object-cover rounded-full"
+                    >
                 </div>
             </div>
-        </section>
+        </div>
     </main>
-    <footer id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-            <p>Social Media: <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
+
+    <!-- About Section -->
+<section id="about" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-gray-900 mb-8">About Me</h2>
+        <p class="text-xl text-gray-700 max-w-4xl mx-auto text-justify">
+            I am a dynamic business leader and entrepreneur with a strong track record of building and growing innovative ventures. As the founder and CEO of African Bureau Stories, I have led the development of impactful digital content, marketing strategies, and business models that bridge the gap between diverse communities and the global stage. My experience spans across technology, publishing, and education, where I’ve honed my ability to drive strategic growth, foster collaboration, and deliver results.
+            <br><br>
+            With a foundation in Information Studies and a passion for integrating technology with business strategy, I am committed to creating sustainable solutions that empower individuals and organizations. My leadership style is centered on fostering creativity, collaboration, and inclusivity, ensuring that every project I undertake leaves a lasting, positive impact.
+        </p>
+    </div>
+</section>
+
+<!-- Work Section -->
+<section id="work" class="py-20">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-gray-900 mb-8">My Work</h2>
+        <p class="text-xl text-gray-700 max-w-4xl mx-auto mb-10">
+            Here are some of the projects that I have worked on, showcasing the intersection of innovation and design.
+        </p>
+        <!-- Project List (Example) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Golden Baobab Prize Card -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                    <a href="https://www.facebook.com/goldenbaobab/" class="text-gray-800 hover:underline">Golden Baobab Prize</a>
+                </h3>
+                <p class="text-gray-700">The Golden Baobab Prize is a prestigious literary award that recognizes and celebrates African writers and illustrators of children's books.
+            </div>
+            <!-- African Bureau Stories Card -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                    <a href="https://www.africanbureau.com" class="text-gray-800 hover:underline">African Bureau Stories</a>
+                </h3>
+                <p class="text-gray-700">African Bureau Stories is a children's publishing house that produces high-quality, engaging books for young readers, showcasing African stories, cultures, and experiences.</p>
+            </div>
+            <!-- GeeBee the Book Bag Card -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                    <a href="https://www.facebook.com/photo/?fbid=10151727925866734&set=a.10150143680941734" class="text-gray-800 hover:underline">GeeBee the Book Bag</a>
+                </h3>
+                <p class="text-gray-700">Geebee the Book Bag is a children's book character who promotes reading, literacy, and a love for books, encouraging young readers to explore the world of literature.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Press Section -->
+   <!-- Press Section -->
+<section id="press" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center mb-10">
+        <h2 class="text-4xl font-semibold text-gray-900 mb-8">Press</h2>
+        <p class="text-xl text-gray-700 max-w-4xl mx-auto">
+            I've had the privilege of being featured in several publications and media outlets. Here are some of my latest press mentions.
+        </p>
+    </div>
+    <div class="container mx-auto px-4 max-w-2xl">
+        <div class="space-y-4">
+            <div class="flex items-center justify-between bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center space-x-4">
+                    <span class="font-semibold text-gray-700 uppercase text-sm">Publishing Perspectives</span>
+                </div>
+                <a href="https://publishingperspectives.com/2019/11/ghana-deborah-ahenkorah-wins-canadaian-global-pluralism-award-golden-baobab/" 
+                   target="_blank" 
+                   class="text-blue-600 hover:text-blue-800 text-sm">Read</a>
+            </div>
+            <div class="flex items-center justify-between bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center space-x-4">
+                    <span class="font-semibold text-gray-700 uppercase text-sm">Global Pluralism Award</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ZvgXzAUH38U" 
+                   target="_blank" 
+                   class="text-blue-600 hover:text-blue-800 text-sm">Watch</a>
+            </div>
+            <div class="flex items-center justify-between bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center space-x-4">
+                    <span class="font-semibold text-gray-700 uppercase text-sm">Little Lives Blog</span>
+                </div>
+                <a href="https://blog.littlelives.com/mining-for-literary-gold-in-africa-deborah-ahenkorah-f63353953485" 
+                   target="_blank" 
+                   class="text-blue-600 hover:text-blue-800 text-sm">Read</a>
+            </div>
+            <div class="flex items-center justify-between bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center space-x-4">
+                    <span class="font-semibold text-gray-700 uppercase text-sm">The Horn Book</span>
+                </div>
+                <a href="https://www.hbook.com/story/foreign-correspondence-an-interview-with-deborah-ahenkorah-torchbearer-for-african-childrens-publishing" 
+                   target="_blank" 
+                   class="text-blue-600 hover:text-blue-800 text-sm">Read</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-gray-900 mb-8">Contact</h2>
+            <p class="text-xl text-gray-700 max-w-4xl mx-auto mb-10">
+                I'd love to hear from you! Whether you're interested in collaborating, discussing ideas, or just want to chat, feel free to get in touch.
+            </p>
+            <a href="mailto:deborah.ahenkorah@mail.mcgill.ca" class="cta-button inline-block text-white px-8 py-4 rounded-full text-lg font-semibold">
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+
+<!-- Mailing List Section -->
+<section id="mailing-list" class="py-20 bg-gradient-to-r from-gray-100 to-gray-200">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-gray-900 mb-4">Join My Mailing List</h2>
+        <p class="text-xl text-gray-700 mb-8">
+            Stay in the loop with occasional updates on what I'm working on, upcoming events, and more.
+        </p>
+        <form action="#" method="POST" class="flex justify-center items-center space-x-4">
+            <input type="email" name="email" placeholder="Enter your email" class="px-6 py-3 border border-gray-300 rounded-md text-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <button type="submit" class="cta-button px-6 py-3 text-white font-semibold rounded-md">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Floating Button -->
+<a href="#mailing-list">
+    <button class="floating-btn">Join Mailing List</button>
+</a>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <p class="text-gray-700">© 2024 Deborah Ahenkorah. All rights reserved.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon text-gray-700 text-2xl">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deborahahenkorah/" target="_blank" class="social-icon text-gray-700 text-2xl">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/debs_oa/" target="_blank" class="social-icon text-gray-700 text-2xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
